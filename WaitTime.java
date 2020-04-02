@@ -13,9 +13,9 @@ public class WaitTime {
 
 	//public static void main(String[] args) throws ParseException {
 	public static void waitTime() throws ParseException { 
-		String username = "YashaswiniS";
-		String password = "jira1@345";
-		String url = "http://localhost:8090/rest/api/2/issue/10201?expand=changelog";		
+		String username = "User_name";
+		String password = "password";
+		String url = "http://jiraserver/rest/api/2/issue/{issue_id}?expand=changelog";		
 		String[] command = {"curl", "-H", "Accept:application/json", "-u", username+":"+password , url};
 		 ProcessBuilder process = new ProcessBuilder(command); 
 	     Process p;
