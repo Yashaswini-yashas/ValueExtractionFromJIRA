@@ -7,9 +7,9 @@ import io.restassured.path.json.JsonPath;
 
 public class IssueDetails {
 	public static void issueDetails(){
-		String username = "YashaswiniS";
-		String password = "jira1@345";
-		String url = "http://localhost:8090/rest/api/2/search";		
+		String username = "User_name";
+		String password = "password";
+		String url = "http://jiraserver/rest/api/2/search";		
 		String[] command = {"curl", "-H", "Accept:application/json", "-u", username+":"+password , url};
 		 ProcessBuilder process = new ProcessBuilder(command); 
 	     Process p;
