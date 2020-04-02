@@ -10,9 +10,9 @@ import io.restassured.path.json.JsonPath;
 public class LeadTime {
 //	public static void main(String[] args) throws ParseException {
 		public static void leadTime() throws ParseException {
-					String username = "YashaswiniS";
-					String password = "jira1@345";
-					String url = "http://localhost:8090/rest/api/2/issue/10201";		
+					String username = "User_name";
+					String password = "password";
+					String url = "http://jiraserver/rest/api/2/issue/{issue_id}";		
 					String[] command = {"curl", "-H", "Accept:application/json", "-u", username+":"+password , url};
 					 ProcessBuilder process = new ProcessBuilder(command); 
 				     Process p;
