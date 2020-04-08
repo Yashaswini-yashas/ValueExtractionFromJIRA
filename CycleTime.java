@@ -11,7 +11,7 @@ public class CycleTime{
 	public static void cycleTime() throws ParseException {
 //	public static void main(String[] args) throws ParseException {
 		String username = "User_name";
-		String password = "password";
+		String password = "Password";
 		String url = "http://jiraserver/rest/api/2/issue/{issue_id}?expand=changelog";		
 		String[] command = {"curl", "-H", "Accept:application/json", "-u", username+":"+password , url};
 		 ProcessBuilder process = new ProcessBuilder(command); 
